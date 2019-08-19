@@ -8,6 +8,14 @@ before:
 builds:
 - env:
   - CGO_ENABLED=0
+  goos:
+  - freebsd
+  - windows
+  - Darwin
+  goarch:
+  - amd64
+  - arm
+  - arm64
 archive:
   replacements:
     darwin: Darwin
