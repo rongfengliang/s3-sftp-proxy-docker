@@ -3,6 +3,7 @@
 before:
   hooks:
     # you may remove this if you don't use vgo
+    - sh goproxy.sh
     - go mod download
 builds:
 - env:
