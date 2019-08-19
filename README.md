@@ -1,4 +1,11 @@
+
+
+
 # s3-sftp-proxy
+
+
+> fork from https://github.com/moriyoshi/s3-sftp-proxy.git  add go mod for build && Dockerfile
+
 
 `s3-ftp-proxy` is a tiny program that exposes resources on your AWS S3 buckets through SFTP protocol.
 
