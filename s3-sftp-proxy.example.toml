@@ -1,0 +1,26 @@
+host_key_file = "./host_key"
+
+[buckets.test]
+endpoint = "http://minio:9000"
+s3_force_path_style = true
+disable_ssl = true
+bucket = "demoapp"
+region = "us-east-1"
+max_object_size = 65536
+writable = true
+readable = true
+listable = true
+auth = "test"
+keyboard_interactive_auth = false
+
+[buckets.test.credentials]
+aws_access_key_id = "dalongdemo"
+aws_secret_access_key = "dalongdemo"
+
+[auth.test]
+type = "inplace"
+
+[auth.test.users.user01]
+password = "test"
+[auth.test.users.user02]
+password = "test"

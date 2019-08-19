@@ -1,0 +1,20 @@
+version: "3"
+services: 
+  minio:
+    image: minio/minio
+    command: server /export
+    ports:
+    - "9000:9000"
+    environment:
+    - "MINIO_ACCESS_KEY=dalongdemo"
+    - "MINIO_SECRET_KEY=dalongdemo"
+  s3-proxy:
+    build: ./
+    image: dalongrong/s3-sftp-proxy
+    command: -debug
+    ports: 
+    - "10022:10022"
+    volumes: 
+    - "./host_key:/app/host_key"
+    - "./s3-sftp-proxy.example.toml:/app/s3-sftp-proxy.example.toml"
+    
