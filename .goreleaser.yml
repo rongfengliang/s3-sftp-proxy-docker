@@ -3,7 +3,6 @@
 before:
   hooks:
     # you may remove this if you don't use vgo
-    - GOPROXY=https://mirrors.aliyun.com/goproxy/
     - go mod download
 builds:
 - env:
