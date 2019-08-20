@@ -47,7 +47,7 @@ nfpms:
       amd64: 64-bit
       386: 32-bit
       darwin: macOS
-      linux: Tux
+      linux: linux
     vendor: dalongrong.
     homepage: https://github.com/rongfengliang/
     # Your app's maintainer (probably you).
